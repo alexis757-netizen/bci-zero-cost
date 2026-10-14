@@ -8,8 +8,8 @@ bool ledState = false;
 int blinkInterval = 500;     
 
 // ================= 今天的新增变量（滤波用） =================
-const int numReadings = 10;      // 滤波窗口大小（每次算10个数据的平均值）
-int readings[numReadings];       // 存储最近10次读数的数组
+const int numReadings = 50;      // 滤波窗口大小（每次算50个数据的平均值）
+int readings[numReadings];       // 存储最近50次读数的数组
 int readIndex = 0;               // 当前数组存储位置索引
 int total = 0;                   // 当前所有读数的总和
 int average = 0;                 // 最终的平滑平均值
